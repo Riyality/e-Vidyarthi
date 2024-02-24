@@ -6,7 +6,11 @@ CREATE TABLE EVIDYARTHI.Student (
  ContactNumber VARCHAR(15),
  Email VARCHAR(255),
  EnrollmentDate DATE,
- StudentStatus VARCHAR(255)
+ Address VARCHAR(255),
+ Gender VARCHAR(255),
+ DOB VARCHAR(255),
+ HighestQualification VARCHAR(255),
+ Mark INT
 );
 
 CREATE TABLE EVIDYARTHI.Course (

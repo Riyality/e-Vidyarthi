@@ -65,17 +65,45 @@
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Enrollment Date <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Enrollment Date"  name="EnrollmentDate">
+<input class="form-control" type="date" placeholder="Enter your Enrollment Date"  name="EnrollmentDate">
 </div>
 </div>
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
-<label>Status <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Status"  name="StudentStatus">
+<label>Address <span class="login-danger">*</span></label>
+<input class="form-control" type="text" placeholder="Enter your Address "  name="Address">
 </div>
 </div>
 
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Gender <span class="login-danger">*</span></label><br>
+  <input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+</div>
+</div>
 
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Date Of Birth <span class="login-danger">*</span></label>
+<input class="form-control" type="date" placeholder="Enter your Dob"  name="Dob">
+</div>
+</div>
+<h5 class="form-title student-info">Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
+
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Highest Qualification <span class="login-danger">*</span></label><br>
+  <input type="radio" name="highestQualification" value="bsc"> Bsc
+<input type="radio" name="highestQualification" value="msc"> Msc
+</div>
+</div>
+<div class="col-12 col-sm-4">
+<div class="form-group local-forms">
+<label>Marks <span class="login-danger">*</span></label>
+<input class="form-control" type="text" placeholder="Enter your Marks "  name="Marks ">
+</div>
+</div>
 <div class="col-12">
 <div class="student-submit">
 <button type="submit" class="btn btn-primary">Submit</button>

@@ -17,8 +17,8 @@ public class StudentDao {
 	JdbcTemplate template;
 
 	public boolean add(Student student) {
-	Object[]argument = {student.getStudentId(),student.getStudentName(),student.getContactNumber(),student.getEmail(),student.getEnrollmentDate(),student.getStudentStatus()};
-	 int result=template.update("insert into student values(?,?,?,?,?,?)",argument);
+	Object[]argument = {student.getStudentId(),student.getStudentName(),student.getContactNumber(),student.getEmail(),student.getEnrollmentDate(),student.getAddress(),student.getGender(),student.getDob(),student.getHighestQualification(),student.getMarks()};
+	 int result=template.update("insert into student values(?,?,?,?,?,?,?,?,?,?)",argument);
 	 System.out.println(result);
 	return false;
 
@@ -35,7 +35,7 @@ public class StudentDao {
 
 				public Student mapRow(ResultSet rs, int arg1) throws SQLException {
 					
-					return  new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6));
+					return  new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getInt(10));
 				}
 				
 			});
@@ -54,8 +54,8 @@ public class StudentDao {
 
 	public boolean update(Student student) {
 		try{
-			Object[]argument = {student.getStudentName(),student.getContactNumber(),student.getEmail(),student.getEnrollmentDate(),student.getStudentStatus(),student.getStudentId()};
-			String result = "UPDATE student SET StudentName=?, ContactNumber=?, Email=?, EnrollmentDate=?, StudentStatus=? WHERE StudentId=?";
+			Object[]argument = {student.getStudentName(),student.getContactNumber(),student.getEmail(),student.getEnrollmentDate(),student.getAddress(),student.getGender(),student.getDob(),student.getHighestQualification(),student.getMarks(),student.getStudentId()};
+			String result = "UPDATE student SET StudentName=?, ContactNumber=?, Email=?, EnrollmentDate=?, Address=?,Gender=?,Dob=?,HighestQualification=?,Marks=? WHERE StudentId=?";
 
 			int a=template.update(result, argument);
 			

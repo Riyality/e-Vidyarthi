@@ -38,40 +38,35 @@
 <div class="col-12">
 <h5 class="form-title student-info">Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
 </div>
+
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
-<label>Student Id <span class="login-danger"></span></label>
-<input class="form-control" type="text" placeholder="Enter your Id"  name="StudentId">
-</div>
-</div>
-<div class="col-12 col-sm-4">
-<div class="form-group local-forms">
-<label>Student Name <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Name"  name="StudentName">
+<label> Name <span class="login-danger">*</span></label>
+<input class="form-control" type="text"   name="StudentName">
 </div>
 </div>
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Contact Number <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Contact Number"  name="ContactNumber">
+<input class="form-control" type="text"  name="ContactNumber">
 </div>
 </div>
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Email <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Email"  name="Email">
+<input class="form-control" type="text"   name="Email">
 </div>
 </div>
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Enrollment Date <span class="login-danger">*</span></label>
-<input class="form-control" type="date" placeholder="Enter your Enrollment Date"  name="EnrollmentDate">
+<input class="form-control" type="date"  name="EnrollmentDate">
 </div>
 </div>
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Address <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Address "  name="Address">
+<input class="form-control" type="text"  name="Address">
 </div>
 </div>
 
@@ -80,16 +75,17 @@
 <label>Gender <span class="login-danger">*</span></label><br>
   <input type="radio" name="gender" value="male"> Male
 <input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
 </div>
 </div>
 
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Date Of Birth <span class="login-danger">*</span></label>
-<input class="form-control" type="date" placeholder="Enter your Dob"  name="Dob">
+<input class="form-control" type="date"   name="Dob">
 </div>
 </div>
-<h5 class="form-title student-info">Student Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
+<h5 class="form-title student-info">Education Information <span><a href="javascript:;"><i class="feather-more-vertical"></i></a></span></h5>
 
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
@@ -101,7 +97,7 @@
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Marks <span class="login-danger">*</span></label>
-<input class="form-control" type="text" placeholder="Enter your Marks "  name="Marks ">
+<input class="form-control" type="text"  name="Marks" >
 </div>
 </div>
 <div class="col-12">

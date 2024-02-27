@@ -33,7 +33,7 @@ public class StudentController {
 		} else {
 			model.addAttribute("error", "Not Added");
 		}
-		return "student/add";
+		return "redirect:/list";
 
 	}
 
@@ -76,6 +76,7 @@ public class StudentController {
 
 			} else {
 				model.addAttribute("error", "Not Delete");
+	
 			}
 			return "redirect:/list";
 

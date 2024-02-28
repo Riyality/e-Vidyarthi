@@ -10,8 +10,7 @@ public class loginDao {
 	JdbcTemplate template;
 
 	public boolean login(String user, String password) {
-		//Object [] args={user,password};
-		//System.out.println(user);
+		
 		Integer r=template.queryForObject("select count(*) from login where username=? and password=?",Integer.class,user,password);
 		System.out.println(r);
 		

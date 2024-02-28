@@ -65,7 +65,7 @@ public class StudentDao {
 				return false;
 			}
 		}catch(Exception e2){
-			
+			e2.printStackTrace();
 			return false;
 		}
 		

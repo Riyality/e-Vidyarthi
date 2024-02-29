@@ -10,11 +10,19 @@ CREATE TABLE EVIDYARTHI.Student (
   Gender VARCHAR(255),
   DOB VARCHAR(255),
   HighestQualification VARCHAR(255),
+<<<<<<< HEAD
   Mark INT
 );
 
 CREATE TABLE EVIDYARTHI.Course (
  CourseId INT AUTO_INCREMENT PRIMARY KEY,
+=======
+  Marks FLOAT
+);
+
+CREATE TABLE EVIDYARTHI.Course (
+ CourseId INT PRIMARY KEY,
+>>>>>>> 348cbe62ffc96079634a71b8ef83ef4690dc4547
  CourseName VARCHAR(255),
  Instructor VARCHAR(255),
  CSchedule VARCHAR(255),

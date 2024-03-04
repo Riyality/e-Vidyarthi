@@ -62,7 +62,7 @@
 									<td class="">
 												<div class="">
 													<a 
-													href="update?courseId=${cs.courseId}&CourseName=${cs.courseName}&Instructor=${cs.instructor}&CSchedule=${cs.cSchedule}&Capacity=${cs.capacity}"
+													href="updated?courseId=${cs.courseId}&CourseName=${cs.courseName}&Instructor=${cs.instructor}&CSchedule=${cs.cSchedule}&Capacity=${cs.capacity}"
 														
 														class="btn btn-sm g-danger-light"> <i
 														 class="feather-edit" style="color: #008B8B"> </i></a>
@@ -83,11 +83,11 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 	<script>
     function confirmDelete(courseId) {
         if (confirm('Are you sure you want to delete this record?')) {
-            window.location.href ='delete?courseId=' + courseId;
+            window.location.href ='course/delete?courseId=' + courseId;
         }
     }
 </script>

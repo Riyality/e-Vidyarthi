@@ -24,7 +24,7 @@ public class CourseController {
 		return "course/add";
 	}
 
-	@RequestMapping("/add")
+	@RequestMapping("/course_add")
 	public String course(@ModelAttribute Course c) {
 		courseservice.Course(c);
 		return "course/add";
@@ -37,7 +37,7 @@ public class CourseController {
 		return "course/courselist";
 	}
 	
-	@RequestMapping("course/delete")
+	@RequestMapping("/course-delete")
 	public String deletecourse(@RequestParam int courseId, Model c ){
 		boolean isDeleted=courseservice.deletecourse(courseId);
 		if(isDeleted){
@@ -50,14 +50,14 @@ public class CourseController {
 
 	}
 	
-	@RequestMapping("updated")
+	@RequestMapping("/course-updated")
 	public String updates() {
 		return "course/update";
 
 	}
 	
 	
-	@RequestMapping("/updateCourse")
+	@RequestMapping("/update-Course")
 	public String updates(@ModelAttribute Course course, Model c){
 		
 	boolean isAdded=courseservice.updatecourse(course);

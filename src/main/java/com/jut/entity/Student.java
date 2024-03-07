@@ -10,9 +10,9 @@ public class Student {
 	private String Gender;
 	private String Dob;
 	private String HighestQualification;
-	private int Marks;
+	private float Marks;
 	public Student(int studentId, String studentName, String contactNumber, String email, String enrollmentDate,
-			String address, String gender, String dob, String highestQualification, int marks) {
+			String address, String gender, String dob, String highestQualification, float marks) {
 		super();
 		StudentId = studentId;
 		StudentName = studentName;
@@ -24,6 +24,10 @@ public class Student {
 		Dob = dob;
 		HighestQualification = highestQualification;
 		Marks = marks;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 	public int getStudentId() {
 		return StudentId;
@@ -79,17 +83,12 @@ public class Student {
 	public void setHighestQualification(String highestQualification) {
 		HighestQualification = highestQualification;
 	}
-	public int getMarks() {
+	public float getMarks() {
 		return Marks;
 	}
-	public void setMarks(int marks) {
+	public void setMarks(float marks) {
 		Marks = marks;
 	}
-	public Student() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
 	
 	
 

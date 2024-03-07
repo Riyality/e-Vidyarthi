@@ -14,9 +14,12 @@
 			<div class="row align-items-center">
 				<div class="col">
 					<h3 class="page-title">Student</h3>
+				
 					<ul class="breadcrumb">
+					 
 						<li class="breadcrumb-item"><a href="index.jsp">Dashboard</a></li>
 						<li class="breadcrumb-item active">Student</li>
+							
 					</ul>
 				</div>
 			</div>
@@ -29,18 +32,7 @@
 				<div class="card card-table">
 					<div class="card-body">
 						<!-- Page Header -->
-						<div class="page-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<h3 class="page-title">Student</h3>
-								</div>
-								<div class="col-auto text-end float-end ms-auto download-grp">
-									<a href="" class="btn btn-outline-primary me-2"><i
-										class="fas fa-download"></i> Download</a> <a href="add-books.jsp"
-										class="btn btn-primary"><i class="fas fa-plus"></i></a>
-								</div>
-							</div>
-						</div>
+						
 
 
 
@@ -51,14 +43,11 @@
 								class="table border-0 star-student table-hover table-center mb-0 datatable table-striped">
 								<thead class="student-thread">
 									<tr>
-										<th>Student Id</th>
-										<th>Student Name</th>
+										<th>Id</th>
+										<th>Name</th>
 										<th>Contact Number</th>
 										<th>Email</th>
 										<th>Enrollment Date</th>
-										<th>Address</th>
-										<th>Gender</th>
-										<th>DOB</th>
 										<th>Highest Qualification</th>
 										<th>Marks</th>
 
@@ -73,14 +62,11 @@
 											<td>${st.contactNumber}</td>
 											<td>${st.email}</td>
 											<td>${st.enrollmentDate}</td>
-											<td>${st.address}</td>
-											<td>${st.gender}</td>
-											<td>${st.dob}</td>
 											<td>${st.highestQualification}</td>
 											<td>${st.marks}</td>
 
-											</div>
-											</td>
+									
+										
 
 											<td class="text-end">
 												<div class="actions">

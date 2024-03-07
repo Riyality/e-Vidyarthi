@@ -19,7 +19,7 @@ public class LoginController {
 		return "login";
 		
 	}
-	@RequestMapping(value="/login")
+	@RequestMapping("/login")
 	public String Login(@RequestParam("username") String user,@RequestParam("password") String password){
 		
 			boolean b=loginservice.login(user,password);

@@ -29,13 +29,13 @@ public class TeacherController {
 		} else {
 			model.addAttribute("error", "Not Added");
 		}
-		return "teacher/add";
+		return "redirect:/view_teacher";
 	}
 
 	@RequestMapping(value = "/view_teacher")
 	public String list(Model model) {
-		List<Teacher> list1 = teacherservice.list();
-		model.addAttribute("teacherList", list1);
+		List<Teacher> list = teacherservice.list();
+		model.addAttribute("teacherList", list);
 		return "teacher/list";
 	}
 

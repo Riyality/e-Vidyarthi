@@ -39,7 +39,7 @@
 <div class="col-sm-12">
 <div class="card">
 <div class="card-body">
-<form action="course_add">
+<form action="course_add" method="post">
 <div class="row">
 <div class="col-12">
 

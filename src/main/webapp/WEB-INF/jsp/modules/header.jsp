@@ -235,10 +235,10 @@
 								class="fas fa-chalkboard-teacher"></i> <span> Teachers</span> <span
 								class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="teachers.html">Teacher List</a></li>
-								<li><a href="teacher-details.html">Teacher View</a></li>
-								<li><a href="add-teacher.html">Teacher Add</a></li>
-								<li><a href="edit-teacher.html">Teacher Edit</a></li>
+								<li><a href="teacher-form"> Add</a></li>
+								<li><a href="view_teacher">View</a></li>
+
+
 							</ul></li>
 						<li class="submenu"><a href="#"><i
 								class="fas fa-building"></i> <span> Departments</span> <span
@@ -336,4 +336,3 @@
 				</div>
 			</div>
 		</div>
-

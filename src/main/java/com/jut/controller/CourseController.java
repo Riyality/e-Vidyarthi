@@ -27,7 +27,7 @@ public class CourseController {
 	@RequestMapping("/course_add")
 	public String course(@ModelAttribute Course c) {
 		courseservice.Course(c);
-		return "course/add";
+		return "redirect:/course_list";
 	}
 
 	@RequestMapping("/course_list")

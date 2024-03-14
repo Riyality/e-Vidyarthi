@@ -10,7 +10,7 @@ CREATE TABLE EVIDYARTHI.Student (
  Gender VARCHAR(255),
  DOB VARCHAR(255),
  HighestQualification VARCHAR(255),
- Mark INT
+ Marks INT
 );
 
 
@@ -64,4 +64,12 @@ CREATE TABLE  EVIDYARTHI.login (
   username VARCHAR(45)  PRIMARY KEY,
   password VARCHAR(45) NULL
   );
+  
+  CREATE TABLE EVIDYARTHI.Department (
+  DepartmentID INT AUTO_INCREMENT PRIMARY KEY,
+  DepartmentName VARCHAR(255),
+  Head_of_Department  VARCHAR(255),
+  Department_Start DATE,
+  Students VARCHAR(255)
+);
  

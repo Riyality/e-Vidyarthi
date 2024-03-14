@@ -244,9 +244,10 @@
 								class="fas fa-building"></i> <span> Departments</span> <span
 								class="menu-arrow"></span></a>
 							<ul>
-								<li><a href="departments.html">Department List</a></li>
-								<li><a href="add-department.html">Department Add</a></li>
-								<li><a href="edit-department.html">Department Edit</a></li>
+							     	<li><a href="add-department">Add</a></li>
+								<li><a href="department_list">List</a></li>
+							
+								
 							</ul></li>
 						<li class="submenu"><a href="#"><i
 								class="fas fa-book-reader"></i> <span> Subjects</span> <span

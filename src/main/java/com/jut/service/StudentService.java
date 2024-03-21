@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.jut.dao.StudentDao;
+import com.jut.entity.Enrollment;
 import com.jut.entity.Student;
 @Service
 public class StudentService {
@@ -32,5 +33,13 @@ public class StudentService {
 		
 		return studentdto.delete(studentId) ;
 	}
+
+	public int getAllStudentIds(int studentId) {
+		
+		return studentdto.getAllStudentIds(studentId);
+	}
+
+
+	
 
 }

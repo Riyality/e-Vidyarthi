@@ -5,7 +5,6 @@ CREATE TABLE EVIDYARTHI.Student (
  StudentName VARCHAR(255),
  ContactNumber VARCHAR(15),
  Email VARCHAR(255),
- EnrollmentDate DATE,
  Address VARCHAR(255),
  Gender VARCHAR(255),
  DOB VARCHAR(255),
@@ -57,6 +56,7 @@ CREATE TABLE EVIDYARTHI.Attendence (
  AttendenceDate DATE,
  StudentId INT, -- Include StudentId column
  CourseId INT, -- Include CourseId column
+ 
  FOREIGN KEY (StudentId) REFERENCES EVIDYARTHI.Student(StudentId),
  FOREIGN KEY (CourseId) REFERENCES EVIDYARTHI.Course(CourseId)
 );

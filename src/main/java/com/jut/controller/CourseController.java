@@ -25,26 +25,26 @@ public class CourseController {
 	}
 
 	@RequestMapping("/course_add")
-	public String course(@ModelAttribute Course c) {
-		courseservice.Course(c);
+	public String course(@ModelAttribute Course model) {
+		courseservice.Course(model);
 		return "redirect:/course_list";
 	}
 
 	@RequestMapping("/course_list")
-	public String Allcourse(Model c) {
+	public String Allcourse(Model model) {
 		List<Course> list1 = courseservice.Allcourse();
-		c.addAttribute("courselist", list1);
+		model.addAttribute("courselist", list1);
 		return "course/courselist";
 	}
 	
 	@RequestMapping("/course-delete")
-	public String deletecourse(@RequestParam int courseId, Model c ){
+	public String deletecourse(@RequestParam int courseId, Model model ){
 		boolean isDeleted=courseservice.deletecourse(courseId);
 		if(isDeleted){
-			c.addAttribute("successMsg","Course deleted Successfully");
+			model.addAttribute("successMsg","Course deleted Successfully");
 		}
 		else{
-			c.addAttribute("errorMsg","Course deleted Successfully");
+			model.addAttribute("errorMsg","Course deleted Successfully");
 		}
 		return "redirect:/course_list";
 
@@ -58,10 +58,10 @@ public class CourseController {
 	
 	
 	@RequestMapping("/update-Course")
-	public String updates(@ModelAttribute Course course, Model c){
+	public String updates(@ModelAttribute Course course, Model model){
 		
 	boolean isAdded=courseservice.updatecourse(course);
-	c.addAttribute("update",course);
+	model.addAttribute("update",course);
 	
 	return "redirect:/course_list";
 

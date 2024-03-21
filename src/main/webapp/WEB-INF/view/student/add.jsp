@@ -19,15 +19,8 @@
 <link rel="stylesheet" href="resources/assets/css/style.css">
 </head>
 <body>
-
-
-
-
 <div class="page-wrapper">
 <div class="content container-fluid">
-
-
-
 <div class="row">
 <div class="col-sm-12">
 <div class="card comman-shadow">
@@ -57,12 +50,7 @@
 <input class="form-control" type="text"   name="Email">
 </div>
 </div>
-<div class="col-12 col-sm-4">
-<div class="form-group local-forms">
-<label>Enrollment Date <span class="login-danger">*</span></label>
-<input class="form-control" type="date"  name="EnrollmentDate">
-</div>
-</div>
+
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
 <label>Address <span class="login-danger">*</span></label>

@@ -42,7 +42,7 @@ public class loginDao {
 
 				public Student mapRow(ResultSet rs, int arg1) throws SQLException {
 					
-					return  new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getInt(10));
+					return  new Student(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6), rs.getString(7), rs.getString(8),  rs.getInt(9));
 				}
 				
 			});

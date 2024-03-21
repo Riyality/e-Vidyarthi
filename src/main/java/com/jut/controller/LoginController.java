@@ -13,41 +13,34 @@ import com.jut.entity.Student;
 import com.jut.entity.Teacher;
 import com.jut.service.loginService;
 
-
 @Controller
 public class LoginController {
 	@Autowired
 	loginService loginservice;
-	
 
 	@RequestMapping("/")
-	public String login(){
+	public String login() {
 		return "login";
-		
+
 	}
+
 	@RequestMapping("/login")
-	public String Login(@RequestParam("username") String user,@RequestParam("password") String password,Model model){
-		
-			boolean b=loginservice.login(user,password);
-			if(b==true)
-			{
-				 int numberOfStudents=loginservice.getnumberOfStudents();
-		          model.addAttribute("numberOfStudents",numberOfStudents);
-             
-		          
-		          int numberOfTeacher=loginservice.getnumberOfTeacher();
-		          model.addAttribute("numberOfTeacher",numberOfTeacher);
-		          
-		          
-		      	List<Student> list1 = loginservice.list();
-				model.addAttribute("studentList", list1);
-		  		
-		  		
-		  		
-				return "index";
-			}
-			else{
-				return "login";
-			}
-}
+	public String Login(@RequestParam("username") String user, @RequestParam("password") String password, Model model) {
+
+		boolean b = loginservice.login(user, password);
+		if (b == true) {
+			int numberOfStudents = loginservice.getnumberOfStudents();
+			model.addAttribute("numberOfStudents", numberOfStudents);
+
+			int numberOfTeacher = loginservice.getnumberOfTeacher();
+			model.addAttribute("numberOfTeacher", numberOfTeacher);
+
+			List<Student> list1 = loginservice.list();
+			model.addAttribute("studentList", list1);
+
+			return "index";
+		} else {
+			return "login";
+		}
+	}
 }

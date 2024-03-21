@@ -13,12 +13,12 @@
 		<div class="page-header">
 			<div class="row align-items-center">
 				<div class="col">
-					<h3 class="page-title">Student</h3>
+					<h3 class="page-title">Enrollment-List</h3>
 				
 					<ul class="breadcrumb">
 					 
 						<li class="breadcrumb-item"><a href="index.jsp">Dashboard</a></li>
-						<li class="breadcrumb-item active">Student</li>
+						<li class="breadcrumb-item active">Enrollment-List</li>
 							
 					</ul>
 				</div>
@@ -44,48 +44,44 @@
 								<thead class="student-thread">
 									<tr>
 										<th>Id</th>
-										<th>Name</th>
-										<th>Contact Number</th>
-										<th>Email</th>
+										<th>EnrollmentDate</th>
+										<th>StudentId</th>
+										<th>CourseId</th>
 										
-										<th>Highest Qualification</th>
-										<th>Marks</th>
 
 										<th class="text-end">Action</th>
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach var="st" items="${studentList }">
+									<c:forEach var="enrollment" items="${enrollmentlist }">
 										<tr>
-											<td>${st.studentId}</td>
-											<td>${st.studentName}</td>
-											<td>${st.contactNumber}</td>
-											<td>${st.email}</td>
+											<td>${enrollment.enrollmentId}</td>
+											<td>${enrollment.enrollmentDate}</td>
+											<td>${enrollment.studentId}</td>
+											<td>${enrollment.courseId}</td>
 											
-											<td>${st.highestQualification}</td>
-											<td>${st.marks}</td>
 
-									
-										
-
-											<td class="text-end">
+										<td class="text-end">
 												<div class="actions">
 
 													<a
-														href="update?StudentId=${st.studentId}&StudentName=${st.studentName}&ContactNumber=${st.contactNumber}&Email=${st.email}&Address=${st.address}&Gender=${st.gender}&Dob=${st.dob}&HighestQualification=${st.highestQualification}&Marks=${st.marks}"
+														href="enrollmentupdate?enrollmentId=${enrollment.enrollmentId}&enrollmentDate=${enrollment.enrollmentDate}&studentId=${enrollment.studentId}&courseId=${enrollment.courseId}"
 														class="btn btn-sm bg-danger-light"><i
 														class="feather-edit" style="color: #008B8B"></i></a>
 														
 														 <a
 														class="btn btn-sm bg-danger-light" href="#"
-														onclick="confirmDelete(${st.studentId});"> <i
+														onclick="confirmDelete(${enrollment.enrollmentId});"> <i
 														class="feather-trash-2" style="color: red"></i>
 													</a>
 
 
 												</div>
 											</td>
+									
+										
 
+											
 										</tr>
 									</c:forEach>
 								</tbody>
@@ -98,14 +94,11 @@
 	</div>
 
 	<script>
-    function confirmDelete(studentId) {
+    function confirmDelete(enrollmentId) {
         if (confirm('Are you sure you want to delete this record?')) {
-            window.location.href = 'delete?studentId=' + studentId;
+            window.location.href = 'enrolldelete?enrollmentId=' + enrollmentId;
         }
     }
-    
-    
-    
 </script>
 
 

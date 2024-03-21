@@ -5,20 +5,19 @@ public class Student {
 	private String StudentName;
 	private String ContactNumber;
 	private String Email;
-	private String EnrollmentDate;
 	private String Address;
 	private String Gender;
 	private String Dob;
 	private String HighestQualification;
 	private float Marks;
-	public Student(int studentId, String studentName, String contactNumber, String email, String enrollmentDate,
+	public Student(int studentId, String studentName, String contactNumber, String email, 
 			String address, String gender, String dob, String highestQualification, float marks) {
 		super();
 		StudentId = studentId;
 		StudentName = studentName;
 		ContactNumber = contactNumber;
 		Email = email;
-		EnrollmentDate = enrollmentDate;
+		
 		Address = address;
 		Gender = gender;
 		Dob = dob;
@@ -53,12 +52,7 @@ public class Student {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public String getEnrollmentDate() {
-		return EnrollmentDate;
-	}
-	public void setEnrollmentDate(String enrollmentDate) {
-		EnrollmentDate = enrollmentDate;
-	}
+	
 	public String getAddress() {
 		return Address;
 	}

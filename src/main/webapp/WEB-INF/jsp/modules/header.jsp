@@ -237,9 +237,19 @@
 							<ul>
 								<li><a href="teacher-form"> Add</a></li>
 								<li><a href="view_teacher">View</a></li>
-
+							</ul></li>
+							
+							<li class="submenu"><a href="#"><i
+								class="fas fa-graduation-cap"></i> <span> Enrollment</span> <span
+								class="menu-arrow"></span></a>
+							<ul>
+								<li><a href="enrollment-form"> Add</a></li>
+								<li><a href="enrollment-list"> List</a></li>
 
 							</ul></li>
+							
+							
+							
 						<li class="submenu"><a href="#"><i
 								class="fas fa-building"></i> <span> Departments</span> <span
 								class="menu-arrow"></span></a>
